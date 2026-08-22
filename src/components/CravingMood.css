@@ -1,0 +1,221 @@
+/* =========================
+   CRAVING MOOD SECTION
+========================= */
+
+.craving-section {
+  width: 100%;
+  padding: 100px 7%;
+  background: #fffaf7;
+  box-sizing: border-box;
+}
+
+.craving-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 55px;
+}
+
+.small-heading {
+  color: #ff5733;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.craving-heading h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #222;
+}
+
+.craving-subtitle {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #777;
+}
+
+
+/* =========================
+   MOOD GRID
+========================= */
+
+.mood-grid {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* =========================
+   MOOD CARD
+========================= */
+
+.mood-card {
+  position: relative;
+  padding: 35px 25px;
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid #f1e3dc;
+  border-radius: 25px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.mood-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff5733;
+
+  box-shadow:
+    0 20px 45px rgba(255, 87, 51, 0.16);
+}
+
+
+/* =========================
+   EMOJI
+========================= */
+
+.mood-emoji {
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 40px;
+
+  background: #fff3ed;
+  border-radius: 50%;
+
+  margin-bottom: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.mood-card:hover .mood-emoji {
+  transform: scale(1.12) rotate(5deg);
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.mood-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  color: #222;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.mood-card p {
+  margin: 0;
+
+  max-width: 250px;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #777;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.mood-card button {
+  margin-top: 20px;
+
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 30px;
+
+  background: #ff5733;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.mood-card button:hover {
+  background: #e84725;
+  transform: translateX(4px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .mood-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .craving-heading h2 {
+    font-size: 40px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .craving-section {
+    padding: 70px 20px;
+  }
+
+  .craving-heading h2 {
+    font-size: 32px;
+  }
+
+  .craving-subtitle {
+    font-size: 16px;
+  }
+
+  .mood-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mood-card {
+    min-height: 220px;
+  }
+}
