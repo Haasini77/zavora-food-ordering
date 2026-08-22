@@ -1,16 +1,52 @@
-# React + Vite
+# 🍽️ Zavora – Food Ordering Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Zavora is a modern and responsive food ordering website built using React and Vite.  
+It provides a smooth and interactive user experience for browsing food items, managing the cart, and placing orders.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🏠 Attractive and responsive homepage
+- 🍔 Food menu with different categories
+- 🔍 Category-based food filtering
+- 🛒 Add food items to cart
+- ➕ Increase or decrease item quantity
+- 🗑️ Remove items from cart
+- 💰 Automatic cart total calculation
+- 📦 Checkout page
+- 📝 Customer details form
+- 💳 Demo payment options
+- ⏳ Payment processing animation
+- ✅ Order confirmation screen
+- 📱 Fully responsive design for mobile, tablet, and desktop
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-## Expanding the Oxlint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```text
+zavora-food-ordering/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── MenuSection.jsx
+│   │   ├── CravingMood.jsx
+│   │   └── ContactSection.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── package-lock.json
+└── README.md
